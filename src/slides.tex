@@ -78,19 +78,23 @@
 
 \usepackage{graphicx} % Allows including images
 \usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage{hyperref}
+
+\hypersetup{colorlinks=false}
 
 %----------------------------------------------------------------------------------------
 %	TITLE PAGE
 %----------------------------------------------------------------------------------------
 
-\title[Free Software]{A Brief History of Free Software} % The short title appears at the bottom of every slide, the full title is only on the title page
+\title[Free Software]{A Brief Overview of Free Software} % The short title appears at the bottom of every slide, the full title is only on the title page
 
 \author{George Wilson} % Your name
 \institute[Griffith University] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
 {
 Griffith University \\ % Your institution for the title page
 \medskip
-\textit{www.github.com/gwils} % Your email address
+\href{http://www.github.com/gwils}{www.github.com/gwils} \\
+\href{http://www.twitter.com/GeorgeTalksCode}{@GeorgeTalksCode} % Your email address
 }
 \date{\today} % Date, can be changed to a custom date
 
@@ -110,140 +114,125 @@ Griffith University \\ % Your institution for the title page
 %----------------------------------------------------------------------------------------
 
 %------------------------------------------------
-\section{``Free''?} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
+\section{What Free Software is} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
 %------------------------------------------------
 
 \subsection{Vocabulary} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
 
 \begin{frame}
-\frametitle{Paragraphs of Text}
+\frametitle{``Free''?}
+\begin{itemize}
+\item English is a terrible language!
+\item Free as in {\bf Freedom}, not as in {\bf free beer}.
+\item I will use ``gratis'' to refer to things without monetary cost.
+\end{itemize}
 
 \end{frame}
 
 %------------------------------------------------
 
+\subsection{Definition}
+
 \begin{frame}
-\frametitle{Bullet Points}
+\frametitle{What is Free Software?}
+
+Free software is software that respects users' freedom and community.
+Software is free if the user of the software has all four essential freedoms:
+
 \begin{itemize}
-\item Lorem ipsum dolor sit amet, consectetur adipiscing elit
-\item Aliquam blandit faucibus nisi, sit amet dapibus enim tempus eu
-\item Nulla commodo, erat quis gravida posuere, elit lacus lobortis est, quis porttitor odio mauris at libero
-\item Nam cursus est eget velit posuere pellentesque
-\item Vestibulum faucibus velit a augue condimentum quis convallis nulla gravida
+\item {\bf Freedom 0} is the freedom to run the program as you wish, 
+  for any purpose.
+\item {\bf Freedom 1} is the study and modify the program. 
+  Access to the source code is a precondition to this.
+\item {\bf Freedom 2} is the freedom to redistribute exact copies of the 
+  software, so that you can help your neighbour.
+\item {\bf Freedom 3} is the freedom to distribute copies of your 
+  modified versions to others. Access to the source code is a precondition 
+  to this.
 \end{itemize}
 \end{frame}
 
 %------------------------------------------------
 
+\section{What Proprietary Software is}
+
 \begin{frame}
-\frametitle{Blocks of Highlighted Text}
-\begin{block}{Block 1}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ultricies in feugiat rutrum, porttitor sit amet augue. Aliquam ut tortor mauris. Sed volutpat ante purus, quis accumsan dolor.
-\end{block}
+\frametitle{What Proprietary Software is}
 
-\begin{block}{Block 2}
-Pellentesque sed tellus purus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum quis magna at risus dictum tempor eu vitae velit.
-\end{block}
+We call software which is not free, ``proprietary software''.
+Proprietary software does not respect the freedom or community of the users.
 
-\begin{block}{Block 3}
-Suspendisse tincidunt sagittis gravida. Curabitur condimentum, enim sed venenatis rutrum, ipsum neque consectetur orci, sed blandit justo nisi ac lacus.
-\end{block}
+The software has an ``owner'' who has power over all the users.
+There can be no collaborative community; users are divided and 
+powerless. Any changes they want in the software must be included by
+the ``owner''.
+
+
 \end{frame}
 
 %------------------------------------------------
 
 \begin{frame}
-\frametitle{Multiple Columns}
-\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+\frametitle{Example Practices}
 
-\column{.45\textwidth} % Left column and width
-\textbf{Heading}
-\begin{enumerate}
-\item Statement
-\item Explanation
-\item Example
-\end{enumerate}
+The following are examples of freedom-denying practices which make software 
+proprietary:
 
-\column{.5\textwidth} % Right column and width
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ultricies in feugiat rutrum, porttitor sit amet augue. Aliquam ut tortor mauris. Sed volutpat ante purus, quis accumsan dolor.
+\begin{itemize}
+\item Restricting what the user can use the software for;
+\item Restricting the user from access to the source code;
+\item Giving the user access to the source code, but restricting them 
+  from modifying it or using parts of it in their program; and
+\item Disallowing the copying and distribution of the software.
+\end{itemize}
 
-\end{columns}
-\end{frame}
-
-%------------------------------------------------
-\section{Second Section}
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Table}
-\begin{table}
-\begin{tabular}{l l l}
-\toprule
-\textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
-\midrule
-Treatment 1 & 0.0003262 & 0.562 \\
-Treatment 2 & 0.0015681 & 0.910 \\
-Treatment 3 & 0.0009271 & 0.296 \\
-\bottomrule
-\end{tabular}
-\caption{Table caption}
-\end{table}
 \end{frame}
 
 %------------------------------------------------
 
+\section{Free Software and Open Source Software}
+
 \begin{frame}
-\frametitle{Theorem}
-\begin{theorem}[Mass--energy equivalence]
-$E = mc^2$
-\end{theorem}
+\frametitle{Free Software and Open Source Software}
+
+There is a significant overlap between software which is ``free'' 
+and software which is ``open source'', but there is also a significant 
+difference between these two movements.
+
+\begin{itemize}
+\item Free software is about the users' {\bf freedom}.
+\item Open source is about the developers' {\bf practical benefit}.
+\item Proponents of open source software may encourage similar practices 
+  to proponents of free software without making the freedoms clear.
+\end{itemize}
+
 \end{frame}
 
 %------------------------------------------------
 
-\begin{frame}[fragile] % Need to use the fragile option when verbatim is used in the slide
-\frametitle{Verbatim}
-\begin{example}[Theorem Slide Code]
-\begin{verbatim}
+\section{Copyleft and Software Licenses}
+
 \begin{frame}
-\frametitle{Theorem}
-\begin{theorem}[Mass--energy equivalence]
-$E = mc^2$
-\end{theorem}
-\end{frame}\end{verbatim}
-\end{example}
+\frametitle{Copyleft}
+
+\ldots
+
+\end{frame}
+
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Software Licenses}
+
+\ldots
+
 \end{frame}
 
 %------------------------------------------------
 
 \begin{frame}
-\frametitle{Figure}
-Uncomment the code on this slide to include your own image from the same directory as the template .TeX file.
-%\begin{figure}
-%\includegraphics[width=0.8\linewidth]{test}
-%\end{figure}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}[fragile] % Need to use the fragile option when verbatim is used in the slide
-\frametitle{Citation}
-An example of the \verb|\cite| command to cite within the presentation:\\~
-
-This statement requires citation \cite{p1}.
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{References}
-\footnotesize{
-\begin{thebibliography}{99} % Beamer does not support BibTeX so references must be inserted manually as below
-\bibitem[Smith, 2012]{p1} John Smith (2012)
-\newblock Title of the publication
-\newblock \emph{Journal Name} 12(3), 45 -- 678.
-\end{thebibliography}
-}
+\Huge{\centerline{Questions?}}
 \end{frame}
 
 %------------------------------------------------
